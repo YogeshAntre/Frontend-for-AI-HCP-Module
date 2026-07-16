@@ -52,8 +52,9 @@ function ChatAssistant(){
         ]);
         try{
             const response = await axios.post(
+                `${import.meta.env.VITE_API_URL}/agent/chat/`,
 
-                "http://127.0.0.1:8000/agent/chat/",
+                // "http://127.0.0.1:8000/agent/chat/",
                 {
                     message:message
                 }
